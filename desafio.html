@@ -27,7 +27,7 @@
     <img src="img/logo.png" class="rounded mx-auto d-block" alt="" height="175" width="175">
     <br>
 
-    <button type="button" class="btn btn-outline-info">Repaso Páginas Web</button>
+    <button type="button" class="btn btn-outline-info" onclick = "location.href='index.html';">Repaso Páginas Web</button>
     <br>
 
     <br>
@@ -36,12 +36,44 @@
 
 </center>
 
-<div id="divPrincipal">
 
 
+    <center> 
+        <h1>Calculo de Descuentos</h1> <br>
+
+        <img src="img/shop.jpg" class="rounded mx-auto d-block" alt="" height="175" width="400">
+
+        <br>
+        <h5>Escribe el total de tu compra</h5>
+        <br>
+
+        <div class="input-group mb-3 w-25">
+            <span class="input-group-text">$</span>
+            <input id="monto" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+            <span class="input-group-text">.00</span>
+          </div>
+
+          <br>
+          <button onclick="calcularDescuento()" type="button" class="btn btn-outline-warning">Calcular descuento</button>
+          <br><br>
+          <button onclick="limpiarDatos()" type="button" class="btn btn-outline-danger">Restablecer datos</button>
+          <br><br>
+
+          <div id="resultado" class="mt-4 text-center hidden">
+            <h3 class="text-xl font-semibold text-gray-800">Descuento Aplicado: <span id="descuento" class="text-green-600"></span></h3>
+            <p class="text-lg text-gray-600">Total a Pagar: $<span id="totalPagar" class="font-semibold"></span></p>
+        </div>
+        <br><br>
+
+          
+          
+
+    </center>
 
 
-</div>
+    <br><br><br>
+
+
 
 <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -57,5 +89,24 @@
             integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
             crossorigin="anonymous"></script>
 
+            <script src="./javascript.js"></script>
+
 </body>
+
+<footer>
+    <div id="footer">
+        <center>
+            <br>
+        <h2>Repaso Páginas Web</h4>
+        <br>
+        <p>• Marvin Javier Gutiérrez Coto           20230644</p>
+        <br>
+        <p>Derechos Reservados Ⓡ</p>
+        <p>Ricaldone 3° Software 2 2024 </p>
+    </center>
+
+    </div>
+
+
+</footer>
 </html>
